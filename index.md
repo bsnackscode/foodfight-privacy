@@ -4,7 +4,7 @@ title: FoodFight — Privacy Policy
 
 # FoodFight — Privacy Policy
 
-**Effective date:** July 29, 2026
+**Effective date:** August 16, 2026
 **Status:** Alpha / TestFlight testing
 
 FoodFight is a small, independently-developed app to help you decide where to
@@ -16,13 +16,14 @@ is unclear, reach out (contact info at the bottom).
 
 ## The short version
 
-- FoodFight stores your data **on your device only**. There is no account
-  server and no company database.
+- FoodFight stores your picks, preferences, and location **on your device**.
+  There is no account server and no company database of your meals.
 - Your location is used **only** to search for nearby restaurants, via
   Google's Places API. It is not stored on any server we control.
-- We don't sell, share, or monetize your data. There's nothing to sell it
-  from — it never leaves your phone except to ask Google "what restaurants
-  are near this point?"
+- If the app crashes, a report may be sent to **Sentry** so we can fix bugs.
+  That report is about the crash (device/app info and a stack trace), not
+  your restaurant picks or search history.
+- We don't sell, share, or monetize your data.
 - There is no real account system yet. "Log in" and "Sign up" are
   placeholder/mock screens that don't create a real account or send your
   email anywhere.
@@ -50,8 +51,9 @@ device.
 
 ### Preferences
 
-Your selected cuisines, search radius, and "avoid recent picks" setting are
-saved **locally on your device** so they persist between sessions.
+Your selected cuisines, search radius, "avoid recent picks" setting, and
+"no fast food" preference are saved **locally on your device** so they
+persist between sessions.
 
 ### Account information
 
@@ -70,12 +72,23 @@ subject to [Google's Privacy Policy](https://policies.google.com/privacy).
 We do not send Google any information beyond what's needed to run the
 search (location, radius, cuisine type).
 
+### Crash reports
+
+If the app hits an error or crash, FoodFight may send a report to
+**[Sentry](https://sentry.io/)** so we can see what broke and fix it. That
+report can include the error message, a stack trace, app version, and
+basic device information (for example OS version). It does **not** include
+your restaurant history, saved location, or cuisine preferences.
+
+Sentry's handling of that data is described in
+[Sentry's Privacy Policy](https://sentry.io/privacy/).
+
 ---
 
 ## What we don't do
 
-- We don't run analytics or crash reporting (not yet — if this changes for a
-  future beta, this document will be updated first).
+- We don't run product analytics (no tracking of which restaurants you
+  pick or how often you search).
 - We don't have advertising or ad tracking of any kind.
 - We don't sell or share your data with third parties for marketing.
 - We don't have a server that stores your personal information — this
